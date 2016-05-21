@@ -7,7 +7,7 @@ import interfaces.Observer;
 public class SoftwareCompany implements Company {
 	private ArrayList<Observer> observers;
 	int taskPriority;
-	String employee;
+	String nameOfTask;
 	String deadline;
 
 	public SoftwareCompany() {
@@ -33,7 +33,7 @@ public class SoftwareCompany implements Company {
 	}
 
 	public String getEmployee() {
-		return employee;
+		return nameOfTask;
 	}
 
 	public String getDeadline() {
@@ -64,7 +64,7 @@ public class SoftwareCompany implements Company {
 
 	public void setAssignment(int taskPriority, String employee, String deadline) {
 		this.taskPriority = taskPriority;
-		this.employee = employee;
+		this.nameOfTask = employee;
 		this.deadline = deadline;
 		assignmentChanged();
 	}

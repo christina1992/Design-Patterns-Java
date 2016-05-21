@@ -4,7 +4,7 @@ import interfaces.Observer;
 import interfaces.ShowTasksInfo;
 
 public class SecondDepartment implements Observer, ShowTasksInfo {
-	private String leadEmployee;
+	private String nameOfTask;
 	private int numOfEmployees = 40;
 	private SoftwareCompany company;
 	private String deadlineOfCurrentTasks;
@@ -17,7 +17,7 @@ public class SecondDepartment implements Observer, ShowTasksInfo {
 
 	@Override
 	public void updateTasks(int priority, String employee, String deadline) {
-		this.leadEmployee = employee;
+		this.nameOfTask = employee;
 		this.deadlineOfCurrentTasks = deadline;
 		this.tasksPriority = priority;
 		this.show();
@@ -26,8 +26,8 @@ public class SecondDepartment implements Observer, ShowTasksInfo {
 
 	@Override
 	public void show() {
-		System.out.println("SECONT DEPARTMENT - The team lead of this department currently is: " + this.leadEmployee + " from total of "
-				+ this.numOfEmployees + " employees. They have task with priority: " + this.tasksPriority
+		System.out.println("SECONT DEPARTMENT - The task is: " + this.nameOfTask + " for  "
+				+ this.numOfEmployees + " employees. With  priority: " + this.tasksPriority
 				+ " from a scale to 1-10, with deadline " + this.deadlineOfCurrentTasks);
 
 	}
