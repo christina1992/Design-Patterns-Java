@@ -1,15 +1,18 @@
-package main;
+package objects;
 
 import java.util.Observable;
 import java.util.Observer;
 
-public class SecondDepartment implements Observer, ShowTasksInfo {
+import interfaces.ShowTasksInfo;
+
+public class ThirdDepartment implements Observer, ShowTasksInfo {
+
 	private String nameOfTask;
-	private int numOfEmployees = 40;
+	private int numOfEmployees = 20;
 	private String deadlineOfCurrentTasks;
 	private int tasksPriority;
 
-	public SecondDepartment(Observable observable) {
+	public ThirdDepartment(Observable observable) {
 		observable.addObserver(this);
 	}
 
@@ -27,9 +30,9 @@ public class SecondDepartment implements Observer, ShowTasksInfo {
 
 	@Override
 	public void show() {
-		System.out.println("SECONT DEPARTMENT - The task is: " + this.nameOfTask + " for  " + this.numOfEmployees
-				+ " employees. With  priority: " + this.tasksPriority + " from a scale to 1-10, with deadline "
-				+ this.deadlineOfCurrentTasks);
+		System.out.println("THIRD DEPARTMENT - The task for today is: " + this.nameOfTask + " assign to "
+				+ this.numOfEmployees + " employees. Task priority is: " + this.tasksPriority
+				+ " from a scale to 1-10, with deadline " + this.deadlineOfCurrentTasks);
 
 	}
 

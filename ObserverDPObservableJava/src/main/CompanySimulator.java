@@ -1,5 +1,9 @@
 package main;
 
+import objects.FirstDepartment;
+import objects.SecondDepartment;
+import objects.SoftwareCompany;
+import objects.ThirdDepartment;
 
 public class CompanySimulator {
 

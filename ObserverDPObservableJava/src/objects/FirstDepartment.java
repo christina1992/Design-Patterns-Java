@@ -1,7 +1,9 @@
-package main;
+package objects;
 
 import java.util.Observable;
 import java.util.Observer;
+
+import interfaces.ShowTasksInfo;
 
 public class FirstDepartment implements Observer, ShowTasksInfo {
 	int taskPriority;
