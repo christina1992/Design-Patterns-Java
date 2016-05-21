@@ -14,7 +14,7 @@ public class FirstDepartment implements Observer, ShowTasksInfo {
 		company.registerObserver(this);
 	}
 
-	@Override
+	@Override 
 	public void updateTasks(int priority, String nameOfTask, String deadline) {
 		this.taskPriority = priority;
 		this.nameOfTask = nameOfTask;
