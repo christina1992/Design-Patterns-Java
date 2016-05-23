@@ -15,3 +15,8 @@ LOOSELY COUPLED - Any changes we make to the subject or the observer never affec
 
 #Decorator Pattern
 The Decorator Pattern attaches additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality. (Based on Design Principle #5 -open-close principle: Classes should be open for extension but closed for modification.)
+
+#Singleton Pattern
+
+The Singleton Pattern ensures a class has only one instance , and provides a global access point to it.
+Depends on your application you have three ways to inicialize a Singleton class actually you have three ways to create one. First is the classic one that is not thread safe so you don't want to use this method of creation of singleton class if you are dealing with multithreaded app. Then there is the other way of creating a singleton class that is thread safe and fast and that is staticly creating a singleton instance. And the third way of creating it is using the synhronizd keyword but it is expensive, it takes more time to run then unsynhronized code.
