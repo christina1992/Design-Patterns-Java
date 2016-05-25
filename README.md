@@ -20,3 +20,12 @@ The Decorator Pattern attaches additional responsibilities to an object dynamica
 
 The Singleton Pattern ensures a class has only one instance , and provides a global access point to it.
 Depends on your application you have three ways to inicialize a Singleton class actually you have three ways to create one. First is the classic one that is not thread safe so you don't want to use this method of creation of singleton class if you are dealing with multithreaded app. Then there is the other way of creating a singleton class that is thread safe and fast and that is staticly creating a singleton instance. And the third way of creating it is using the synhronizd keyword but it is expensive, it takes more time to run then unsynhronized code.
+
+#State Pattern
+
+The State Pattern allows an object to alter it's behavior when it's internal state changes. The object will appear to change it's class.
+- The pattern encapsulates state into separate classes
+- The context delegates to the current state to handle requests 
+- Once a request is handled, the current state may change.
+- Each state has different behavior
+Design Principles in here - (encapsulate what varies, favor composition over inheritance, keep a class closed for modification but open for extension)
