@@ -29,3 +29,7 @@ The State Pattern allows an object to alter it's behavior when it's internal sta
 - Once a request is handled, the current state may change.
 - Each state has different behavior
 Design Principles in here - (encapsulate what varies, favor composition over inheritance, keep a class closed for modification but open for extension)
+
+#The Collection Pattern (Iterator)
+
+The Iterator Pattern provides a way to access the elements of an aggregate object sequentially without exposing it's underlying representation. (Based on Design Principle #6 - A class should have only one reason to change)
