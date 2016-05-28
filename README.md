@@ -33,3 +33,7 @@ Design Principles in here - (encapsulate what varies, favor composition over inh
 #The Collection Pattern (Iterator)
 
 The Iterator Pattern provides a way to access the elements of an aggregate object sequentially without exposing it's underlying representation. (Based on Design Principle #6 - A class should have only one reason to change)
+
+#The Factory Method Pattern
+
+The Factory Method Pattern defines an interface for creating an object, but lets subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
